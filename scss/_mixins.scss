@@ -1,0 +1,23 @@
+@import 'variables';
+
+@mixin  format-document {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+@mixin  main {
+    width: 100%;
+    display: flex;
+    justify-content: center, space-between, space-evenly, space-around;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+    padding: 1%;
+    background-color: #ffff;
+}
+@mixin setup {
+    margin: auto;
+    width: $width;
+    max-width: $max-width-1;
+}

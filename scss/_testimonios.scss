@@ -1,0 +1,263 @@
+@import 'variables';
+@import 'mixins';
+
+* {
+    @include format-document;
+}
+
+.main-testimonios {
+    @include main;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+
+    .container-cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        margin: 15px auto;
+        padding: 15px;
+        border-radius: 20px;
+
+
+        .card {
+            margin: 50px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30%;
+            flex-direction: column;
+            padding: 10px;
+            border-radius: 50px 10px 50px 10px;
+            box-shadow: -1px 9px 35px 6px rgba(0, 0, 0, 0.75);
+
+
+
+            .imagen-texto {
+                width: 100%;
+                height: 100px;
+                display: flex;
+                justify-content: space-around;
+                flex-direction: row;
+                padding: 25px;
+
+                .img-alumno {
+                    width: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-self: center;
+                    padding: 15px;
+
+                    img {
+                        border-radius: 100px;
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+
+                h4 {
+                    width: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+            }
+
+            .comillas {
+                width: 100%;
+                height: 20px;
+                display: flex;
+                justify-content: left;
+                align-self: center;
+
+                p {
+                    color: orange;
+                    font-size: 30px;
+                }
+            }
+
+            .texto {
+                width: 100%;
+                height: 100%;
+                padding: 10px;
+
+                p {
+                    font-family: $font-download;
+                    margin-top: 5px;
+                }
+
+            }
+        }
+
+        .video {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+
+            iframe {
+                width: 560px;
+                height: 315px;
+                border-radius: 10px 50px 10px 50px;
+            }
+        }
+    }
+
+    .container-cardText {
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        flex-direction: row;
+        width: 100%;
+        padding: 15px;
+        margin-top: 50px;
+        border-radius: 20px;
+
+
+
+        .card {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            flex-direction: column;
+            padding: 10px;
+            border-radius: 50px 10px 50px 10px;
+            box-shadow: -1px 9px 35px 6px rgba(0, 0, 0, 0.75);
+
+
+
+            .imagen-texto {
+                width: 100%;
+                height: 100px;
+                display: flex;
+                justify-content: space-around;
+                flex-direction: row;
+                padding: 25px;
+
+                .img-alumno {
+                    width: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-self: center;
+                    padding: 15px;
+
+                    img {
+                        border-radius: 100px;
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+
+                h4 {
+                    width: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+            }
+
+            .comillas {
+                width: 100%;
+                height: 20px;
+                display: flex;
+                justify-content: left;
+                align-self: center;
+
+                p {
+                    color: orange;
+                    font-size: 30px;
+                }
+            }
+
+            .texto {
+                width: 100%;
+                height: 100%;
+                padding: 10px;
+
+                p {
+                    font-family: $font-download;
+                    margin-top: 5px;
+                }
+
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+    .main-testimonios {
+
+
+
+        .container-cards {
+            .card {
+                width: 40%;
+                margin: 20px;
+
+            }
+
+            .video {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+
+                iframe {
+                    width: 450px;
+                    height: 300px;
+                    border-radius: 10px 50px 10px 50px;
+
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .main-testimonios {
+
+
+
+        .container-cards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .card {
+                width: 100%;
+                margin: 20px;
+
+            }
+
+            .video {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                iframe {
+                    width: 100%;
+                    height: 300px;
+                    border-radius: 10px 50px 10px 50px;
+
+                }
+            }
+        }
+
+        .container-cardText {
+            width: 100%;
+            .card {
+                width: 100%;
+
+
+            }
+        }
+    }
+}

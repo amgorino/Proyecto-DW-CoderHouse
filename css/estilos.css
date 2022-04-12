@@ -1,0 +1,130 @@
+/* * {
+   margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    display: flex;
+    justify-content: center, space-between, space-evenly, space-around;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    background-color:#f7f7f7;
+    height: 500px;
+    padding: 1%;
+      
+}
+
+.carrusel{
+    height: 50%;
+}
+
+.carrusel {
+    margin: 50px auto;
+    border: 4px solid gray;
+    box-shadow: 0px 0px 20px primary-color-3;
+}
+
+body {
+    position: relative;
+    background-color: white;
+}
+ .imagenTest {
+
+    height: 300px;
+    width: 50%;
+    margin-right: 10px;
+}
+
+h2 {
+    color:white;
+    text-align: center;
+}
+
+h2 {
+    animation-duration: 2s;
+    animation-name: titulo;
+    animation-iteration-count: 1;
+ }
+
+ form {
+    align-content: center;
+}
+
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    justify-items: center;
+    align-items: center;
+    height: 200px;
+    width: 60%;
+}
+  
+.sectionDos {
+    padding: 20px;
+}
+
+
+#formulario {
+    align-content: center;
+    justify-content: center;
+}
+
+#metodologia {
+    display: flex;
+    flex-direction: column;
+}
+
+#testimonio {
+
+    display: flex;
+    justify-content: center, space-between, space-evenly, space-around;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    margin:10px; 
+    border: 10px;
+    gap: 20px;
+
+}
+
+.imagenTest:hover {
+
+    transform: scale(1.1);
+}
+
+
+
+
+
+@media screen and (max-width:768px) {
+
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center, space-between, space-evenly, space-around;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        background-color: black;
+        height: 500px;
+        width: 100%;
+        padding: 1%;
+      }
+}
+@media screen and (max-width:600px) {
+
+    .estiloParrafos {
+    color:white;
+    padding: 20px;
+    position: sticky;
+    }
+}
+
+
+
+
+ */

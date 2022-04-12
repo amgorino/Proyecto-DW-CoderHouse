@@ -1,0 +1,13 @@
+@import 'variables';
+@import 'mixins';
+
+* {
+    @include format-document;
+}
+
+.main-contacto {
+    @include main;
+
+
+
+}
