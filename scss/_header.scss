@@ -1,10 +1,8 @@
 @import 'variables';
 @import 'mixins';
-
 * {
     @include format-document;
 }
-
 header {
     @include setup;
     height: 90px;
@@ -16,19 +14,16 @@ header {
     position: sticky;
     top: 0;
     z-index: 3;
-
     .logo {
         width: 20%;
         z-index: 3;
     }
-
     .logo img {
-        margin-left: $margin-3;
+        margin-left: 15px;
         margin-top: 15px;
         width: 130px;
         height: 60px;
     }
-
     nav {
         width: 80%;
         display: flex;
@@ -36,36 +31,32 @@ header {
         flex-direction: row;
         z-index: 5;
         margin-right:30px;
-
-
         li {
             list-style: none;
             display: inline-block;
             position: relative;
-            margin: $margin-3 $margin-1;
-
+            margin: 15px 5px;
             a {
                 color: $secondary-color-4;
-                font-family: $font-primary-2;
+                font-family: 'Bebas Neue',
+                cursive;;
                 text-align: center;
-                font-size: $font-size-5;
-                font-family: 'Gaegu', cursive;
+                font-size: 20px;
+                font-family: $font-download;
                 font-weight: bold;
                 letter-spacing: 2px;
                 text-decoration: none;
-                padding: $padding-2 $padding-6;
+                padding: 10px 12px;
                 display: flex;
                 flex-direction: row;
                 position: relative;
             }
         }
-
         .img-iconos {
-            margin-right: $margin-1;
+            margin-right: 5px;
             width: 16px;
             height: 16px;
         }
-
         a:hover {
             border-radius: 10px;
             border: 1px solid #ffff;
@@ -74,19 +65,12 @@ header {
             box-shadow: 1px 0px 0px 2px #ffff;
             transform: scale(1.1);
         }
-
         .active {
             text-decoration: underline 2px $secondary-color-1;
             background-color: $secondary-color-7;
             border-radius: 5px;
         }
-
-
-
-
-
     }
-
     .cart {
         margin-top: 15px;
         margin-right: 5px;
@@ -94,11 +78,9 @@ header {
         z-index: 3;
         list-style: none;
         position: absolute;
-
         a {
             color: $secondary-color-4
         }
-
         i:hover {
             background: none;
             border: none;
@@ -106,37 +88,29 @@ header {
             box-shadow: none;
             transition: 1s;
             transform: scale(1.1);
-
         }
     }
-
     #checkbtn {
         display: none;
     }
-
     label {
         display: none;
     }
 }
-
-
 @media screen and (max-width:1024px) {
     header {
         display: flex;
         flex-direction: row;
-
         .logo {
             justify-content: space-between;
-            width: $width;
-
+            width: 100%;
             img{
                 z-index: 3;
             }
         }
-
         nav {
             position: absolute;
-            width: $width;
+            width:100%;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -147,43 +121,36 @@ header {
             background: -webkit-linear-gradient(to right, $secondary-color-2, $primary-color-8);
             background: linear-gradient(to right, $secondary-color-2, $primary-color-8);
             z-index: 1;
-
             li {
                 list-style: none;
                 display: inline-block;
                 position: relative;
-                margin: $margin-3 auto;
-
+                margin: 15px auto;
                 a {
                     color: #ffff;
-                    font-family: 'Gaegu', cursive;
+                    font-family: $font-download;
                     text-align: center;
-                    font-size: $font-size-2;
+                    font-size: 12px;
                     font-weight: bold;
                     letter-spacing: 2px;
                     text-decoration: none;
-                    padding: $padding-2 $padding-6;
+                    padding: 10 12;
                     display: flex;
                     flex-direction: row;
                 }
             }
-
             .img-iconos {
-                margin-right: $margin-1;
+                margin-right: 5px;
                 width: 16px;
                 height: 16px;
             }
-
-
             a {
                 color: #ef46d1;
                 text-align: left;
-                font-size: $font-size-12;
+                font-size: 5px;
                 
             }
-
         }
-
         .cart {
             margin-top: 10px;
             margin-right: 90px;
@@ -191,11 +158,9 @@ header {
             z-index: 3;
             list-style: none;
             position: absolute;
-
             a {
                 color: $secondary-color-4
             }
-
             i:hover {
                 background: none;
                 border: none;
@@ -203,56 +168,44 @@ header {
                 box-shadow: none;
                 transition: 1s;
                 transform: scale(1.1);
-
             }
         }
-
-
         #checkbtn {
             display: none;
         }
-
         .menu-hamb {
             margin: 12px 25px 0px auto;
             display: block;
             z-index: 5;
             height: 15px;
         }
-
         .cruz-boton {
             margin: 12px 25px 0px auto;
             display: none;
             height: 15px;
             z-index: 5;
-
         }
-
         #checkbtn:checked~nav {
             margin-top: 60px;
             transition: all 500ms ease-in;
         }
-
         #checkbtn:checked~.cruz-boton {
             display: block;
             transition: all 500ms ease-in-out;
         }
-
         #checkbtn:checked~.menu-hamb {
             left: 0;
             display: none;
         }
     }
 }
-
 @media screen and (max-width:768px) {
-
     header {
         display: flex;
         flex-direction: row;
-
         .logo {
             justify-content: space-between;
-            width: $width;
+            width: 100%;
             z-index: 3;
             img{
                 margin-top: 5px;
@@ -261,10 +214,9 @@ header {
                 height: 80px;
             }
         }
-
         nav {
             position: absolute;
-            width: $width;
+            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: left;
@@ -276,33 +228,27 @@ header {
             background: linear-gradient(to right, $secondary-color-2, $primary-color-8);
             z-index: 1;
             ul {
-                width: $width;
+                width: 100%;
                 display: flex;
                 justify-content: center;
                 margin: auto;
                 flex-direction: column;
-
-
                 li {
                     margin: auto;
                     margin-left: -20px;
-                    margin-top: $margin-3;
-                    width: $width;
+                    margin-top: 15px;
+                    width: 100%;
                     border-bottom: 2px solid $secondary-color;
-
                     a {
-                        font-size: $font-size-5;
+                        font-size:20px;
                         letter-spacing: 10px;
                         width: 90%;
                         text-align: left;
                         color: #fff;
-                        font-family: 'Gaegu', cursive;
+                        font-family: $font-download;
                     }
-
                 }
-
             }
-
             a:hover {
                 border-radius: none;
                 transition: none;
@@ -317,86 +263,66 @@ header {
                 box-shadow: none;
                 transform: none;
             }
-
             .img-iconos {
-                margin-right: $margin-2;
+                margin-right: 10px;
                 margin-top: 6px;
                 width: 16px;
                 height: 16px;
             }
         }
-
         #checkbtn {
             display: none;
         }
-
         .menu-hamb {
             margin: 25px 25px 0px auto;
             display: block;
             height: 15px;
         }
-
         .cruz-boton {
             margin: 12px 25px 0px auto;
             display: none;
             height: 15px;
         }
-
         #checkbtn:checked~nav {
             margin-top: 60px;
             transition: all 300ms ease-in;
         }
-
         #checkbtn:checked~.cruz-boton {
             display: block;
             transition: all 300ms ease-in-out;
         }
-
         #checkbtn:checked~.menu-hamb {
             left: 0;
             display: none;
         }
     }
 }
-
-
 @media screen and (max-width: 500px) {
     header {
-
         .logo img {
             margin-top: 10px;
             margin-left: 0;
             
         }
-
         .cart {
             margin-right: 60px;
             right: 0;
-
-
             i {
                 margin-top: 10px;
                 font-size: 20px;
-
             }
-
         }
-
         .menu-hamb {
             i {
                 margin-top: 10px;
                 font-size: 25px;
-
             }
         }
-
         .cruz-boton {
             i {
                 margin-top: 18px;
                 font-size: 25px;
-
             }
-
         }
     }
 }

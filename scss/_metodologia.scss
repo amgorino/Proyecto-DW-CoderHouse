@@ -1,6 +1,5 @@
 @import 'variables';
 @import 'mixins';
-
 * {
     @include format-document;
 }
@@ -10,93 +9,68 @@ body{
 .main-metodologia {
     @include main;
     background-color: black;
-
-
     .container-metodologia {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        background-color: #5150509a;
-
-
+        background-color: white;
         .contenedor-parrafos {
             width: 50%;
             height: 100%;
             padding: 15px;
-            
-
             h2 {
                 font-family: $font-download;
-                color: #ffff;
+                color: black;
             }
-
             p {
-                font-family: $font-download;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
                 margin: 10px;
                 padding: 5px;
-                color: #ffff;
-
-
+                color: black;
                 span {
                     background-color: #D0D05C;
                     color: #000;
                     
                 }
             }
-
-
         }
-
         .img-metodologia {
             width: 50%;
             height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-
             img {
                 width: 100%;
                 height: 700px;
             }
         }
     }
-
 }
-
 @media screen and (max-width:1024px) {
     .main-metodologia {
         @include main;
     background-color: #000;
-
-    
         .container-metodologia {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             padding: 15px;
-
-    
             .contenedor-parrafos {
                 width: 80%;
                 height: 100%;
                 padding: 15px;
-    
                 h2 {
                     font-family: $font-download;
                 }
-    
                 p {
                     font-family: $font-download;
                     margin: 10px;
                     padding: 5px;
-
                 }
-    
-    
             }
-    
             .img-metodologia {
                 width: 80%;
                 height: 100%;
@@ -104,14 +78,11 @@ body{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                
-    
                 img {
                     width: 100%;
                     height: 100%;
                 }
             }
         }
-    
     }
 }

@@ -1,51 +1,45 @@
 @import 'variables';
 @import 'mixins';
-
 * {
     @include format-document;
 }
-
 .main-quienessomos {
     @include main;
-
+    background-color: black;
     .container-quienessomos {
         display: flex;
         flex-direction: row;
         width: 100%;
-
+        background-color:$primary-color-4;
         .container-uno {
             display: flex;
             flex-direction: column;
             width: 50%;
             height: 100vh;
-            padding: 10px;
-
+            padding: 5px;
             .titulo-quienesSomos {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 width: 100%;
                 height: 30%;
-
                 h2 {
                     text-align: center;
-
+                    color: $secondary-color-4;
+                    font-family: $font-download;
                 }
             }
-
             .parrafo-quienesSomos {
                 height: 100%;
                 width: 70%;
                 margin: auto;
-
+                color: $secondary-color-4;
                 p {
                     padding: 15px;
-
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
                 }
             }
-
         }
-
         .container-dos {
             display: flex;
             flex-direction: column;
@@ -53,7 +47,6 @@
             align-self: center;
             width: 50%;
             padding: 10px;
-
             img {
                 margin: auto;
                 width: 400px;
@@ -61,80 +54,57 @@
             }
         }
     }
-
-
-
 }
-
 @media screen and (max-width:1024px) {
     .main-quienessomos {
         @include main;
-
         .container-quienessomos {
-
-
             .container-uno {
-
-
                 .parrafo-quienesSomos {
                     height: 100%;
                     width: 90%;
                     margin: auto;
                     p {
                         padding: 15px;
-
                     }
                 }
-
             }
         }
     }
 }
-
 @media screen and (max-width:768px) {
     .main-quienessomos {
         @include main;
-
         .container-quienessomos {
             display: flex;
             flex-direction: column-reverse;
-
             width: 100%;
-
             .container-uno {
                 display: flex;
                 flex-direction: column;
                 width: 100%;
                 height: 100%;
                 padding: 10px;
-
                 .titulo-quienesSomos {
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     width: 100%;
                     height: 30%;
-
                     h2 {
                         text-align: center;
-
                     }
                 }
-
                 .parrafo-quienesSomos {
                     height: 100%;
                     width: 100%;
                     margin: auto;
-
                     p {
                         font-stretch:condensed;
                         padding: 15px;
-
                     }
                 }
-
             }
-
             .container-dos {
                 display: flex;
                 flex-direction: column;
