@@ -255,7 +255,10 @@ header {
             width: $width;
             z-index: 3;
             img{
+                margin-top: 5px;
                 z-index: 4;
+                width: 150px;
+                height: 80px;
             }
         }
 
@@ -290,7 +293,7 @@ header {
                     a {
                         font-size: $font-size-5;
                         letter-spacing: 10px;
-                        width: $width-9;
+                        width: 90%;
                         text-align: left;
                         color: #fff;
                         font-family: 'Gaegu', cursive;
@@ -328,7 +331,7 @@ header {
         }
 
         .menu-hamb {
-            margin: 12px 25px 0px auto;
+            margin: 25px 25px 0px auto;
             display: block;
             height: 15px;
         }
@@ -363,8 +366,7 @@ header {
         .logo img {
             margin-top: 10px;
             margin-left: 0;
-            width: 120px;
-            height: 40px;
+            
         }
 
         .cart {
@@ -382,7 +384,7 @@ header {
 
         .menu-hamb {
             i {
-                margin-top: 8px;
+                margin-top: 10px;
                 font-size: 25px;
 
             }
@@ -390,7 +392,7 @@ header {
 
         .cruz-boton {
             i {
-                margin-top: 8px;
+                margin-top: 18px;
                 font-size: 25px;
 
             }

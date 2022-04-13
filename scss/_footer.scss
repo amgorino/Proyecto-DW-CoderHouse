@@ -64,12 +64,39 @@ footer {
             a {
 
                 i {
-                    margin: 10px;
-                    color: #ef46d1;
+                    margin: 5px;
+                    color: rgb(82, 73, 73);
+                    
                 }
                 
             }
            
         }
     }
+}
+
+@media screen and (max-width:500px) {
+    footer {
+        width: 100%;
+        padding: 15px;
+        .contenedor-datos {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
+          
+            .datos-uno{
+                width: 100%;
+            }
+            .datos-dos {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-self: center;
+            }
+
+        }
+    }  
+    
 }

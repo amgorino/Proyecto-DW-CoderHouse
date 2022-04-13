@@ -245,7 +245,10 @@ header label {
     z-index: 3;
   }
   header .logo img {
+    margin-top: 5px;
     z-index: 4;
+    width: 150px;
+    height: 80px;
   }
   header nav {
     position: absolute;
@@ -278,7 +281,7 @@ header label {
   header nav ul li a {
     font-size: 20px;
     letter-spacing: 10px;
-    width: 50%;
+    width: 90%;
     text-align: left;
     color: #fff;
     font-family: "Gaegu", cursive;
@@ -307,7 +310,7 @@ header label {
     display: none;
   }
   header .menu-hamb {
-    margin: 12px 25px 0px auto;
+    margin: 25px 25px 0px auto;
     display: block;
     height: 15px;
   }
@@ -333,8 +336,6 @@ header label {
   header .logo img {
     margin-top: 10px;
     margin-left: 0;
-    width: 120px;
-    height: 40px;
   }
   header .cart {
     margin-right: 60px;
@@ -345,11 +346,11 @@ header label {
     font-size: 20px;
   }
   header .menu-hamb i {
-    margin-top: 8px;
+    margin-top: 10px;
     font-size: 25px;
   }
   header .cruz-boton i {
-    margin-top: 8px;
+    margin-top: 18px;
     font-size: 25px;
   }
 }
@@ -424,10 +425,32 @@ footer .contenedor-datos .datos-dos {
   padding-right: 10px;
 }
 footer .contenedor-datos .datos-dos a i {
-  margin: 10px;
-  color: #ef46d1;
+  margin: 5px;
+  color: rgb(82, 73, 73);
 }
 
+@media screen and (max-width: 500px) {
+  footer {
+    width: 100%;
+    padding: 15px;
+  }
+  footer .contenedor-datos {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+  footer .contenedor-datos .datos-uno {
+    width: 100%;
+  }
+  footer .contenedor-datos .datos-dos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+}
 /*colores primarios*/
 /*colores secundarios*/
 /*fuentes*/
@@ -625,7 +648,6 @@ body {
   margin: auto;
   width: 400px;
   height: 700px;
-  border-radius: 1500px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -817,7 +839,7 @@ body {
   justify-content: center;
 }
 .main-testimonios .container-cards .video iframe {
-  width: 560px;
+  width: 700px;
   height: 315px;
   border-radius: 10px 50px 10px 50px;
 }
@@ -931,6 +953,246 @@ body {
   }
   .main-testimonios .container-cardText .card {
     width: 100%;
+  }
+}
+/*colores primarios*/
+/*colores secundarios*/
+/*fuentes*/
+/*tamaño de fuentes*/
+/*padding*/
+/*width*/
+/*max-width*/
+/*margin*/
+/*colores primarios*/
+/*colores secundarios*/
+/*fuentes*/
+/*tamaño de fuentes*/
+/*padding*/
+/*width*/
+/*max-width*/
+/*margin*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedor-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 5px;
+  cursor: pointer;
+  z-index: 3;
+}
+.contenedor-whatsapp img {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+.contenedor-whatsapp a {
+  cursor: pointer;
+}
+.contenedor-whatsapp .texto-whatsapp {
+  background-color: rgba(0, 0, 0, 0.637);
+  margin-top: -38px;
+  right: 50px;
+  width: 120px;
+  position: absolute;
+  transition: 500ms all ease;
+  opacity: 0;
+  text-align: center;
+  color: #fff;
+  visibility: hidden;
+  background-color: #45c014;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.contenedor-whatsapp:hover > .texto-whatsapp {
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+  z-index: 3;
+}
+
+@media screen and (max-width: 500px) {
+  .contenedor-whatsapp img {
+    width: 35px;
+    height: 35px;
+    z-index: 3;
+  }
+  .contenedor-whatsapp .texto-whatsapp {
+    margin-top: -29px;
+    margin-left: 35px;
+    width: 80px;
+  }
+  .contenedor-whatsapp .texto-whatsapp h5 {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 5px;
+  }
+}
+/*colores primarios*/
+/*colores secundarios*/
+/*fuentes*/
+/*tamaño de fuentes*/
+/*padding*/
+/*width*/
+/*max-width*/
+/*margin*/
+/*colores primarios*/
+/*colores secundarios*/
+/*fuentes*/
+/*tamaño de fuentes*/
+/*padding*/
+/*width*/
+/*max-width*/
+/*margin*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-contacto {
+  width: 100%;
+  display: flex;
+  justify-content: center, space-between, space-evenly, space-around;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  height: 100%;
+  padding: 1%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(17, 16, 16);
+}
+.main-contacto h2 {
+  color: white;
+}
+.main-contacto .contenedor-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  padding: 15px;
+}
+.main-contacto .contenedor-form form {
+  width: 50%;
+  padding: 15px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-contacto .contenedor-form form input {
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 15px auto;
+}
+.main-contacto .contenedor-form form textarea {
+  width: 100%;
+  height: 200px;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 15px auto;
+}
+.main-contacto .contenedor-form form button {
+  width: 30%;
+  padding: 15px;
+  margin: auto;
+  border-radius: 15px;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-family: "Gaegu", cursive;
+}
+.main-contacto .contenedor-form form button:hover {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-contacto {
+    width: 100%;
+    display: flex;
+    justify-content: center, space-between, space-evenly, space-around;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+    padding: 1%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(17, 16, 16);
+  }
+  .main-contacto .contenedor-form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    padding: 15px;
+  }
+  .main-contacto .contenedor-form form {
+    width: 100%;
+    padding: 15px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main-contacto {
+    width: 100%;
+    display: flex;
+    justify-content: center, space-between, space-evenly, space-around;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+    padding: 1%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(17, 16, 16);
+  }
+  .main-contacto .contenedor-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    padding: 15px;
+  }
+  .main-contacto .contenedor-form form {
+    width: 100%;
+    padding: 15px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main-contacto .contenedor-form form button {
+    width: 50%;
+    padding: 15px;
+    margin: auto;
+    border-radius: 15px;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family: "Gaegu", cursive;
   }
 }
 * {
