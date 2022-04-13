@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@700&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/6549b02dfa.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <meta name="description" content="Alumnos">
     <meta name="keywords" content="clases, inglés, online, clases por chat">
@@ -61,7 +62,7 @@
         </div>
     </div>
     <main class="main-testimonios">
-        <div class="container-cards">
+        <div class="container-cards" data-aos="fade-left">
             <div class="card">
                 <div class="imagen-texto">
                     <div class="img-alumno">
@@ -83,7 +84,7 @@
                     allowfullscreen></iframe>
             </div>
         </div>
-        <div class="container-cards">
+        <div class="container-cards" data-aos="fade-right">
             <div class="video">
                 <iframe width="358" height="635" src="https://www.youtube.com/embed/0ZN7NFVf0bw"
                     title="YouTube video player" frameborder="0"
@@ -105,7 +106,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-cardText">
+        <div class="container-cardText" data-aos="fade-up">
             <div class="card">
                 <div class="imagen-texto">
                     <div class="img-alumno">
@@ -141,6 +142,15 @@
             <p>Powered by Amanda Gorino | 2022</p>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+      AOS.init({
+          easing: 'ease-out-back',
+          duration: 1000
+      })
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
 </body>
-
 </html>

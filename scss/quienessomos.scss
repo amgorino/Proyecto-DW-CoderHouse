@@ -58,6 +58,7 @@
 @media screen and (max-width:1024px) {
     .main-quienessomos {
         @include main;
+        background-color: black;
         .container-quienessomos {
             .container-uno {
                 .parrafo-quienesSomos {
@@ -75,6 +76,7 @@
 @media screen and (max-width:768px) {
     .main-quienessomos {
         @include main;
+        background-color: black;
         .container-quienessomos {
             display: flex;
             flex-direction: column-reverse;
@@ -117,7 +119,6 @@
                     margin: auto;
                     width: 40%;
                     height: 40%;
-                    border-radius: 1500px;
                 }
             }
         }

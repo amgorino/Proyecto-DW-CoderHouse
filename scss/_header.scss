@@ -246,6 +246,7 @@ header {
                         text-align: left;
                         color: #fff;
                         font-family: $font-download;
+                        border: none;
                     }
                 }
             }
@@ -253,7 +254,7 @@ header {
                 border-radius: none;
                 transition: none;
                 color: $secondary-color;
-                border-bottom: none;
+                border: none;
                 cursor: pointer;
                 background: none;
                 background: -webkit-linear-gradient(none);

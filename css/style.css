@@ -268,12 +268,13 @@ header label {
     text-align: left;
     color: #fff;
     font-family: "Gaegu", cursive;
+    border: none;
   }
   header nav a:hover {
     border-radius: none;
     transition: none;
     color: #d5d5d8;
-    border-bottom: none;
+    border: none;
     cursor: pointer;
     background: none;
     background: -webkit-linear-gradient(none);
@@ -530,7 +531,7 @@ body {
   .main-metodologia .container-metodologia .img-metodologia {
     width: 80%;
     height: 100%;
-    background-color: #515050;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -626,6 +627,7 @@ body {
     height: 100%;
     padding: 1%;
     background-color: white;
+    background-color: black;
   }
   .main-quienessomos .container-quienessomos .container-uno .parrafo-quienesSomos {
     height: 100%;
@@ -647,6 +649,7 @@ body {
     height: 100%;
     padding: 1%;
     background-color: white;
+    background-color: black;
   }
   .main-quienessomos .container-quienessomos {
     display: flex;
@@ -692,7 +695,6 @@ body {
     margin: auto;
     width: 40%;
     height: 40%;
-    border-radius: 1500px;
   }
 }
 /*colores primarios*/
